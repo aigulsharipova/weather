@@ -30,3 +30,36 @@ h1, h3 {
   background: rgba(0, 0, 0, 0.3);
   z-index: 0;
 }
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2em 3em 4em 3em;
+}
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.city-time, .temp, .weather {
+  margin: 0 1em;
+}
+.city-time h1 {
+  margin: 0;
+  margin-bottom: 0.2em;
+  font-size: 3em;
+}
+.temp {
+  font-size: 7em;
+  margin: 0;
+}
+.weather img {
+  display: block;
+  margin: 0.5em 0;
+}
