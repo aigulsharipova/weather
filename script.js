@@ -50,7 +50,7 @@ function dayOfTheWeek(day, month, year) {
 };
 
 function fetchWeatherData() {
-fetch(`https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={8295895dd6d46f70b2b0d30da2819ead}${cityInput}`)
+  fetch(`https://api.weatherapi.com/v1/current.json?key=35f3a046aea34a5080625626221908=${cityInput}`)
   .then(response => response.json())
   .then(data => {
     console.log(data);
